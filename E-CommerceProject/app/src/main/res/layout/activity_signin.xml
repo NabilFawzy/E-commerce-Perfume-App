@@ -1,0 +1,65 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgrd"
+    tools:context="com.example.nabil.e_commerceproject.signin">
+
+    <EditText
+        android:id="@+id/etEmailin"
+        android:fontFamily="casual"
+        android:hint=" Email "
+        android:textColorHint="#7f7f7f"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="155dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etPasswordin"
+        android:layout_below="@id/etEmailin"
+        android:fontFamily="casual"
+        android:hint=" password "
+        android:inputType="textPassword"
+        android:textColorHint="#7f7f7f"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="120dp"
+        android:id="@+id/btin"
+        android:textSize="25dp"
+        android:background="@android:color/darker_gray"
+        android:text="Sign In"
+        android:layout_below="@id/etPasswordin"
+        android:textColor="#ffffff"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:backgroundTint="#FF4081"
+        android:buttonTint="#FF4081"
+        android:textColor="#7f7f7f"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        android:id="@+id/rememberMe"
+
+        android:layout_below="@+id/etPasswordin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btforget"
+        android:layout_marginTop="5dp"
+        android:text="Forget password"
+        android:layout_below="@id/btin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

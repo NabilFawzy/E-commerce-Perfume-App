@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgrd"
+    tools:context="com.example.nabil.e_commerceproject.signup">
+  <EditText
+      android:id="@+id/etUserNameup"
+      android:fontFamily="casual"
+      android:hint="user name"
+      android:textColorHint="#7f7f7f"
+      android:textColor="#ffffff"
+      android:textSize="25dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+  <EditText
+      android:id="@+id/etEmailup"
+      android:layout_below="@id/etUserNameup"
+      android:fontFamily="casual"
+      android:hint=" Email "
+      android:textColorHint="#7f7f7f"
+      android:textColor="#ffffff"
+      android:textSize="25dp"
+      android:inputType="textEmailAddress"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+  <RadioGroup
+      android:layout_below="@id/etEmailup"
+      android:id="@+id/RGbuttons"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+     <TextView
+         android:layout_marginTop="2dp"
+         android:layout_marginBottom="2dp"
+         android:id="@+id/tvGender"
+         android:textColor="#ffffff"
+         android:textSize="30dp"
+         android:text="Gender"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+    <RadioButton
+        android:id="@+id/RBMale"
+        android:textColor="#7f7f7f"
+        android:textSize="20dp"
+        android:text="Male"
+        android:buttonTint="#FF4081"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:id="@+id/RBFemale"
+        android:buttonTint="#FF4081"
+        android:textColor="#7f7f7f"
+        android:textSize="20dp"
+        android:text="Female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+  </RadioGroup>
+  <EditText
+      android:id="@+id/etJobup"
+      android:layout_below="@id/RGbuttons"
+      android:fontFamily="casual"
+      android:hint=" Job "
+      android:textColorHint="#7f7f7f"
+      android:textColor="#ffffff"
+      android:textSize="25dp"
+      android:layout_marginTop="1dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+  <EditText
+      android:id="@+id/etPasswordup"
+      android:layout_below="@id/etJobup"
+      android:fontFamily="casual"
+      android:hint=" password "
+      android:inputType="textPassword"
+      android:textColorHint="#7f7f7f"
+      android:textColor="#ffffff"
+      android:textSize="25dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+  <RelativeLayout
+      android:id="@+id/Rlb"
+      android:layout_below="@id/etPasswordup"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tvBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:text="BirthDay"/>
+    <EditText
+        android:layout_marginLeft="130dp"
+        android:layout_toRightOf="@id/tvBirth"
+        android:hint=" Day "
+        android:textColorHint="#7f7f7f"
+        android:textColor="#ffffff"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="3"
+        android:id="@+id/day"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_marginLeft="210dp"
+        android:hint=" Month "
+        android:textColorHint="#7f7f7f"
+        android:textColor="#ffffff"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="3"
+        android:id="@+id/month"
+        android:layout_toRightOf="@id/day"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_marginLeft="290dp"
+        android:layout_toRightOf="@id/month"
+        android:hint=" Year "
+        android:textColorHint="#7f7f7f"
+        android:textColor="#ffffff"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="3"
+        android:id="@+id/year"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+  </RelativeLayout>
+  <EditText
+      android:layout_below="@id/Rlb"
+      android:id="@+id/uncleNMame"
+      android:fontFamily="casual"
+      android:hint="Uncle name for Secuirty"
+      android:textColorHint="#7f7f7f"
+      android:textColor="#ffffff"
+      android:textSize="25dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+  <Button
+      android:layout_marginLeft="120dp"
+      android:id="@+id/btsnup"
+      android:textSize="25dp"
+      android:background="@android:color/darker_gray"
+      android:text="Sign Up"
+      android:layout_below="@id/uncleNMame"
+      android:textColor="#ffffff"
+      android:fontFamily="casual"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgrd"
+    tools:context="com.example.nabil.e_commerceproject.AdminPage">
+
+    <Button
+        android:layout_marginTop="150dp"
+        android:text="Products"
+        android:id="@+id/productsffun"
+        android:layout_marginLeft="130dp"
+        android:background="@android:color/darker_gray"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="130dp"
+        android:id="@+id/CategoriesFun"
+        android:textSize="20dp"
+        android:background="@android:color/darker_gray"
+        android:text="Categories "
+        android:textColor="#ffffff"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Perfumes</string>
+    <string-array name="categies">
+        <item>ALL</item>
+        <item>MEN</item>
+        <item>WOMEN</item>
+    </string-array>
+    <string-array name="smallcountries">
+        <item></item>
+        <item>Cairo</item>
+        <item>Alexandria</item>
+        <item>Menoufia</item>
+    </string-array>
+
+</resources>

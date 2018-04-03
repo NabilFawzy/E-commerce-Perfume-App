@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgrd"
+    tools:context="com.example.nabil.e_commerceproject.myproductsfunctions">
+    <EditText
+        android:id="@+id/etproductnameadd"
+        android:fontFamily="casual"
+        android:hint="Prodcut name"
+        android:textColorHint="#7f7f7f"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:inputType="numberDecimal"
+        android:layout_below="@id/etproductnameadd"
+        android:id="@+id/priceadd"
+        android:fontFamily="casual"
+        android:hint="Price"
+        android:textColorHint="#7f7f7f"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:inputType="number"
+        android:layout_below="@id/priceadd"
+        android:id="@+id/quantityadd"
+        android:fontFamily="casual"
+        android:hint="Quantity"
+        android:textColorHint="#7f7f7f"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_below="@id/quantityadd"
+        android:id="@+id/imageNameadd"
+        android:fontFamily="casual"
+        android:hint="Image Name"
+        android:textColorHint="#7f7f7f"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:inputType="number"
+        android:layout_below="@id/imageNameadd"
+        android:id="@+id/categotyidadd"
+        android:fontFamily="casual"
+        android:hint="Category ID"
+        android:textColorHint="#7f7f7f"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginLeft="140dp"
+        android:id="@+id/btnproductadd"
+        android:textSize="25dp"
+        android:background="@android:color/darker_gray"
+        android:text="ADD"
+        android:layout_below="@id/categotyidadd"
+        android:textColor="#ffffff"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_below="@id/btnproductadd"
+        android:id="@+id/productNameRemove"
+        android:fontFamily="casual"
+        android:hint="Product Name"
+        android:textColorHint="#7f7f7f"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="210dp"
+        android:id="@+id/btnproductRemove"
+        android:textSize="25dp"
+        android:background="@android:color/darker_gray"
+        android:text="Remove"
+        android:layout_below="@id/btnproductadd"
+        android:textColor="#ffffff"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

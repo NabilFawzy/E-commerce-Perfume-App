@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nabil.e_commerceproject.productDescription">
+   <RelativeLayout
+       android:id="@+id/layout1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+    <ImageView
+        android:paddingTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imgdes"
+        android:src="@drawable/r1"/>
+    <TextView
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tv1des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:text="Rwre tert"
+        android:layout_toRightOf="@id/imgdes"
+        android:textSize="36dp"/>
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgdes"
+        android:paddingTop="10dp"
+        android:textSize="20dp"
+        android:textColor="#00ffff"
+        android:id="@+id/tv2des"
+        android:text="50 Piece"
+        android:layout_below="@id/tv1des"/>
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgdes"
+        android:paddingTop="20dp"
+        android:textSize="25dp"
+        android:textColor="#00ffff"
+        android:id="@+id/tv3des"
+        android:text="50.000 "
+        android:layout_below="@id/tv2des"/>
+   </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+        <EditText
+            android:id="@+id/etAddurquantity"
+            android:hint="your Quantity to Cart"
+            android:paddingRight="140dp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_below="@id/etAddurquantity"
+            android:id="@+id/etAddress"
+            android:hint="your Address"
+            android:paddingRight="140dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:layout_below="@id/etAddress"
+            android:layout_width="wrap_content"
+            android:id="@+id/spsmallcontries"
+            android:layout_height="wrap_content"
+            android:entries="@array/smallcountries"></Spinner>
+
+        <Button
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/spsmallcontries"
+            android:text="ADD"
+            android:id="@+id/btaddtoCart"
+            android:fontFamily="casual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginLeft="130dp"
+            android:layout_toRightOf="@id/btaddtoCart"
+            android:text="Edit"
+            android:layout_below="@id/spsmallcontries"
+            android:id="@+id/btedittoCart"
+            android:fontFamily="casual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageButtondel"
+        android:background="@drawable/removfromcart"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignLeft="@+id/textViewdel"
+        android:layout_alignStart="@+id/textViewdel" />
+
+    <TextView
+        android:textColor="#ff0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Remove from Cart"
+        android:id="@+id/textViewdel"
+        android:layout_alignBottom="@+id/imageButtondel"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

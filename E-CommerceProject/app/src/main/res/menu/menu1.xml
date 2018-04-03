@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:contentDescription="gg"
+        android:id="@+id/search"
+        android:title="search"
+        android:icon="@drawable/admn"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"
+        >
+    </item>
+    <item
+        android:contentDescription="gg"
+        android:id="@+id/searchvoice"
+        android:title="search"
+        android:icon="@drawable/voice"
+        app:showAsAction="ifRoom"
+        >
+    </item>
+    <item android:id="@+id/rr"
+        android:title="go back"
+        app:showAsAction="ifRoom">
+        <item android:id="@+id/customerName"
+            android:title="username"
+            app:showAsAction="ifRoom">
+        </item>
+        <item android:id="@+id/mcart"
+            android:title="myCart"
+            android:icon="@drawable/admn"
+            app:showAsAction="ifRoom">
+        </item>
+        <item android:id="@+id/logout"
+            android:title="Log Out"
+            android:icon="@drawable/admn"
+            app:showAsAction="ifRoom">
+        </item>
+    </item>
+
+</menu>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nabil.e_commerceproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconperf"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".signup"
+            android:noHistory="true" />
+        <activity
+            android:name=".signin"
+            android:noHistory="true" />
+        <activity android:name=".Home" />
+        <activity android:name=".AdminPage" />
+        <activity android:name=".categoriesfunctions" />
+        <activity android:name=".row" />
+        <activity android:name=".myproductsfunctions" />
+        <activity android:name=".birthdayNotification" />
+        <activity android:name=".productDescription" />
+        <activity android:name=".myCart" />
+        <activity android:name=".resetforgetpassword"></activity>
+    </application>
+
+</manifest>

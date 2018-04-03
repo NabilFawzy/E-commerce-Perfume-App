@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nabil.e_commerceproject.myCart">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textColor="#ff0000"
+        android:text="Your Order Price"
+        android:textSize="25dp"
+       android:id="@+id/tvSubmitorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#00ffff"
+        android:text="300$"
+        android:textSize="25dp"
+        android:id="@+id/tvSubmitorderprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="120dp"
+        android:id="@+id/btinOrderNow"
+        android:textSize="25dp"
+        android:background="@android:color/darker_gray"
+        android:text=" Submit "
+        android:layout_below="@id/tvSubmitorderprice"
+        android:textColor="#ffffff"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:layout_below="@id/btinOrderNow"
+        android:id="@+id/ListViewProductsmycart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</RelativeLayout>
